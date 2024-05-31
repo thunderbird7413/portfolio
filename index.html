@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My PortFolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Recommended -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poetsen+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <!-- body tag -->
+  <body>
+    <!-- Header -->
+    <div id="header" class="wodka">
+      <div
+        class="container .header-container"
+        style="padding: 2vw 10vw 4vw 10vw !important"
+      >
+        <!-- Navbar -->
+        <nav>
+          <!-- Logo -->
+          <h1>Portfolio.</h1>
+          <!-- Menu -->
+          <ul id="sidemenu" style="margin-top: 0px; justify-content: center">
+            <li><a href="#header" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="image-area-text">
+          <!-- Text for headline -->
+          <div class="header-text">
+            <p style="font-weight: bold">Hello, It's Me</p>
+            <h1>Vinayak Jat</h1>
+            <div class="likhna-box">
+              And I'm a
+              <div class="typewriter" id="typewriter-text"></div>
+            </div>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://facebook-messenger.com"
+                ><i class="fa-brands fa-facebook-messenger"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a class="btn btn2" download href="my-cv.pdf">Download CV</a>
+          </div>
+
+          <img
+            src="https://img.freepik.com/free-photo/3d-portrait-people_23-2150793887.jpg?t=st=1716983400~exp=1716987000~hmac=9ba2c22325ca0cb0eb89287751a32c0d0a80a1b4494b938a29730736f6dbc006&w=360"
+            alt="Profile Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section-->
+    <div id="about" class="wodka">
+      <div class="container">
+        <div
+          class="row"
+          style="padding: 3vw; border: 3px solid #45db9c; border-radius: 25px"
+        >
+          <!-- Coulmn 1 -->
+          <div class="about-col-1">
+            <img
+              src="https://media.istockphoto.com/id/1212062401/photo/happy-handsome-man-using-laptop-at-wooden-table-portrait.jpg?s=612x612&w=0&k=20&c=bG2Dnz30JfLeYMf-vdBERZAt5F7Lus6LGoMJWHjsbmM="
+            />
+            <!--Image-->
+          </div>
+          <!-- Column 2 -->
+          <div class="about-col-2">
+            <div class="goola"></div>
+            <h1 class="subtitle">About Me</h1>
+            <p
+              style="
+                font-size: 1.4rem;
+                margin-top: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+                position: relative;
+                z-index: 10;
+                color: #eeeeee;
+                font-weight: bold;
+              "
+            >
+              I'm Vinayak Jat, a Full Stack Web Developer based in Kota,
+              Rajasthan. With a passion for crafting seamless digital
+              experiences, I specialize in blending creativity with
+              functionality to bring ideas to life. From dynamic front-end
+              designs to robust back-end solutions, I thrive on the challenge of
+              turning concepts into reality through clean, efficient code. Let's
+              collaborate and bring your digital vision to fruition!
+              <br />
+              <br />
+              Beyond the realms of coding, you'll often find me exploring new
+              technologies, tinkering with side projects, or immersing myself in
+              the latest trends and best practices. I firmly believe in the
+              power of continuous learning and am committed to staying at the
+              forefront of industry innovations.
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('Skills')"
+                style="font-size: 1.35rem"
+              >
+                Skills
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('Experience')"
+                style="font-size: 1.35rem"
+              >
+                Experience
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('Education')"
+                style="font-size: 1.35rem"
+              >
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Langauages</span><br />HTML, CSS, JavaScript</li>
+                <li>
+                  <span>Frameworks</span><br />
+                  React, Node.js, Express
+                </li>
+                <li><span>Tools</span><br />Git, VS Code</li>
+                <li>
+                  <span>Databases</span><br />
+                  MongoDB, MySQL
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>2024-Present</span><br />GSOC Google Solution of Code
+                </li>
+                <li>
+                  <span>2024-Present</span><br />Web Developer at UBA IIT
+                  Roorkee
+                </li>
+                <li>
+                  <span>2024-Present</span><br />Web Developer at Thomso IIT
+                  Roorkee
+                </li>
+                <li><span>2024-Present</span><br />Intern at Unified Mentor</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2023-2027</span><br />IIT Roorkee</li>
+                <li><span>2022-2023</span><br />Class 12</li>
+                <li><span>2020-2021</span><br />Class 10</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service -->
+    <div id="Services" class="wodka">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2 class="content-h2">Full Stack Developer</h2>
+            <p class="content-paragraph">
+              As a Full Stack Developer, I specialize in creating end-to-end web
+              applications that are both dynamic and robust. I have extensive
+              experience in integrating front-end and back-end technologies to
+              build cohesive and scalable solutions. My comprehensive approach
+              ensures that every aspect of your application, from user interface
+              to server logic, works seamlessly together to deliver a smooth and
+              efficient experience.
+            </p>
+            <a href="#" class="anchor-content">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-docker"></i>
+            <h2 class="content-h2">UI/UX Design</h2>
+            <p class="content-paragraph">
+              With a keen eye for design and a passion for user experience, I
+              excel in creating visually stunning and intuitive front-end
+              designs. I focus on crafting responsive and interactive interfaces
+              that not only look great but also provide a seamless and engaging
+              experience for users. By leveraging the latest technologies and
+              best practices in web design, I bring your vision to life with
+              precision and creativity.
+            </p>
+            <a href="#" class="anchor-content">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-dropbox"></i>
+            <h2 class="content-h2">Backend Development</h2>
+            <p class="content-paragraph">
+              As a dedicated Back-End Developer, I build the powerful engines
+              that drive your web applications. My expertise lies in developing
+              scalable, secure, and high-performance server-side logic. I ensure
+              that your application's data management, server configuration, and
+              business logic are all optimized for reliability and efficiency.
+              Whether it's creating APIs, managing databases, or implementing
+              complex functionalities, I provide the backbone that supports your
+              digital presence.
+            </p>
+            <a href="#" class="anchor-content">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="wodka">
+      <h1>My Skills</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://cdn6.aptoide.com/imgs/d/b/1/db15c8f3e911f21c53ddd9736ee27571_icon.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/ably/ghost/prod/2023/11/best-react-component-libraries.png?tr=w-1728,q-50"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyOe4xJhJFvDUbm1OSFnnEc4plFTvdYrBmOfNf-YUNA&s"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Azure-SQL-Server-Monitoring.component.complex-narrative-xl.ts=1689345623470.png/content/adobe-cms/us/en/products/instana/supported-technologies/microsoft-sql-server-monitoring/_jcr_content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJFWBVD-jqiMrOnYLBHyYsf76kBd-POSOWlyxM91xeg&s"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdG9qnL6YBPohLsY-yowMoSV1HQsID8xHc1xqRBj8YUg&s"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AEKi5Mgv3v6o18RQ0aDhqCv-z__i1JuHOw&s"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="wodka">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1683488869706-4152826ca919?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvY2lhbCUyMG1lZGlhfGVufDB8MXwwfHx8MA%3D%3D"
+            />
+            <div class="layer">
+              <h3>Sundown Website-Full of Animations</h3>
+              <p>
+                Welcome to my Sundown! This was an amazing project with a
+                professional touch. I bring a unique blend of creativity and
+                technical expertise to every project. My work is characterized
+                by attention to detail, innovative solutions, and a commitment
+                to excellence. Explore this to see stunning visuals,
+                user-friendly designs, and transformative results. Let's
+                collaborate and bring your vision to life!
+              </p>
+              <a
+                href="https://thunderbird7413.github.io/sundown/"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1590183030142-efad5a97612f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5ldGZsaXh8ZW58MHwxfDB8fHww"
+            />
+            <div class="layer">
+              <h3>Cinequest - Web App</h3>
+              <p>
+                Welcome to Cinequest, your ultimate destination for movie
+                enthusiasts! Discover an extensive collection of films from all
+                genres, curated just for you. Whether you're looking for the
+                latest blockbuster or a hidden gem, our app makes finding your
+                next favorite movie effortless. Dive in and start your cinematic
+                journey with us today!
+              </p>
+              <a
+                href="https://thunderbird7413.github.io/cinequest/cinequest"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1602492665157-639323eadd31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGluc3RhZ3JhbXxlbnwwfDF8MHx8fDA%3D"
+            />
+            <div class="layer">
+              <h3>Pintreset Clone</h3>
+              <p>
+                Tried to create the clone of the Pintreset Website with the
+                login, signup and logout functionality. To make a post, see
+                posts show the feed etc. and much more. Do check this, it's
+                amazing. Do check out...
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1559854036-2409f22a918a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="layer">
+              <h3>COLLEGE HELPER</h3>
+              <p>
+                Created a website for a college to manage its content, it
+                contains many amazing animations and user attracting items. Dive
+                in it...
+              </p>
+              <a
+                href="https://thunderbird7413.github.io/collegeHelper/"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYXRoZXIlMjBhcHB8ZW58MHwxfDB8fHww"
+            />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                This was a projet of GSoc, We tried to create a real time
+                weather information providing app. It's ridiculous. Have a look
+                at it...
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfDF8MHx8fDA%3D"
+            />
+            <div class="layer">
+              <h3>Amazon Clone</h3>
+              <p>
+                Created the clone of the amazon website. Only frontend. Gave my
+                best and was successful in doing it. One of my beginner
+                projects.
+              </p>
+              <a
+                href="https://thunderbird7413.github.io/AMAZON-WEBSITE-CLONE/"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="wodka">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p style="font-size: 2rem">
+              <i class="fa-solid fa-paper-plane"></i>Contactat:
+              vinayakjat.ps11@gmail.com
+            </p>
+            <p style="font-size: 2rem">
+              <i class="fa-solid fa-phone"></i>7413885512
+            </p>
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your E-Mail"
+                required
+              />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-solid fa-copyright"></i> Made with Love
+          <i class="fa-solid fa-heart" style="color: #ff004f"></i> and Passion
+        </p>
+      </div>
+    </div>
+
+    <!-- Java Script -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      // To make content hidden and appear on click
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+
+    <!-- Locomotive js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const phrases = [
+          "Full Stack Developer",
+          "Frontend Developer",
+          "Backend Developer",
+        ];
+        const typewriterElement = document.getElementById("typewriter-text");
+        let currentPhraseIndex = 0;
+        let maxPhraseIndex = phrases.length - 1;
+
+        function typePhrase(phrase) {
+          return gsap
+            .timeline()
+            .to(typewriterElement, {
+              duration: 0.1 * phrase.length,
+              text: phrase,
+              ease: "none",
+            })
+            .to(typewriterElement, {
+              duration: 0.5,
+              text: "",
+              ease: "none",
+              delay: 1,
+            });
+        }
+
+        function startTypingAnimation() {
+          const timeline = gsap.timeline({
+            repeat: -1,
+            repeatDelay: 1,
+            yoyo: false,
+          });
+          phrases.forEach((phrase, index) => {
+            timeline.add(typePhrase(phrase));
+          });
+        }
+
+        startTypingAnimation();
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
